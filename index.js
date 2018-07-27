@@ -11,7 +11,6 @@ mongoose.connection.on('error', (e) => {
   process.exit();
 })
 
-
 const server = app.listen(process.env.PORT, () => {
   console.log(`Watcher serving on port ${process.env.PORT}`)
 });

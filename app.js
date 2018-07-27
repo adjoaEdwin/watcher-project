@@ -11,7 +11,7 @@ app.use(routes);
 app.use(bodyParser.json());
 app.use('/css', express.static(path.join(__dirname, '/node_modules/bulma/css')))
 app.use('/css', express.static(path.join(__dirname, '/public/css')));
-app.use('/js', express.static(path.join(__dirname, '/public/js')));
+app.use('/img', express.static(path.join(__dirname, '/public/img')));
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 

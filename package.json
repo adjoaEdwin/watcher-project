@@ -8,15 +8,18 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "gwuah | quincy | edwin",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "bulma": "^0.7.1",
     "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "google-trends-api": "^4.7.0",
-    "mongoose": "^5.2.5"
+    "mongoose": "^5.2.5",
+    "nodemon": "^1.18.3"
   }
 }
