@@ -7,8 +7,12 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(routes);
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.json());
+app.use(routes);
+
 app.use('/css', express.static(path.join(__dirname, '/node_modules/bulma/css')))
 app.use('/css', express.static(path.join(__dirname, '/public/css')));
 app.use('/img', express.static(path.join(__dirname, '/public/img')));
